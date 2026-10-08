@@ -1,0 +1,16 @@
+# Install PyTorch first for your platform (CPU build shown; use the CUDA build on NVIDIA machines):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+ultralytics>=8.3
+opencv-python>=4.9
+numpy
+scipy
+scikit-learn
+imageio-ffmpeg
+lap
+gradio>=5
+# Detector acceleration via ONNX Runtime. DirectML uses any Windows GPU (AMD/Intel/NVIDIA,
+# including integrated graphics). On an NVIDIA machine, onnxruntime-gpu or CUDA PyTorch is faster.
+onnxruntime-directml; sys_platform == "win32"
+onnxruntime; sys_platform != "win32"
+onnx
+onnxslim

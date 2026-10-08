@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+outputs/
+*.log
+.gradio/
+.pytest_cache/
+.claude/
+
+# Model weights are downloaded/exported by scripts/download_models.py
+# (the ONNX file is over GitHub's 100 MB limit)
+models/
+
+# Game footage: use your own videos (broadcast footage isn't redistributable)
+videos/
